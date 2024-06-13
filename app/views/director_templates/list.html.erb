@@ -9,7 +9,7 @@
     <th></th>
   </tr>
   
-  <%= Director.all.each do |a_director| %>
+  <% Director.all.each do |a_director| %>
     <tr>
       <td><% a_director.id %></td>
       <td><img src="<%= a_director.image %>" width="100" alt="director image"></td>
@@ -17,5 +17,5 @@
       <td><%= a_director.dob %></td>
       <td><a href="/directors/<%= a_director.id %>">Show details</a></td>
     </tr>
-  <%= end %>
+  <% end %>
 </table>
